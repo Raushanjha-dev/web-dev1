@@ -1,0 +1,46 @@
+.tv::before{
+      content:"\f26c";
+}
+.inner-container{
+    height: 100px;
+}
+.card-section1 img {
+    width: 250px;
+    height: 200px;
+}
+
+.card {
+    max-width: 400px;
+    min-width: 250px;
+    max-height: 380px;
+    min-height: 390px;
+    text-align: center;
+    background-color: #8a84ef;
+
+}
+
+.card-section1{
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+   
+    font-family: arial;
+    
+    display: grid;
+    grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+footer span{
+    display: block;
+}
+
+@media screen and(orientation: portarait){
+    .aricle{
+        display: flex;
+        flex-direction: column; 
+        align-items: ;
+    }
+}
