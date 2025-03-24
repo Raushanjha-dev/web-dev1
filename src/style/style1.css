@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+   
+    
+}
+body{
+    
+    min-height: 300vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    
+
+}
+li {
+    list-style-type: none;
+    height: 50px;
+    font-size: 1.1rem;
+    
+}
+li a{
+    text-decoration: none;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: black;
+
+}
+
+.bi-list{
+    display: none;
+}    
+    
+
+
+.brand-name{
+    margin-right: auto;
+}
+nav li:hover{
+    background-color: #f0f0f0;
+   
+}
+.sidebar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.434);
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    
+
+
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+.bi-x-lg:hover{
+    background-color:rgb(171, 169, 169);
+}
+
+.article {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Wrap items on small screens */
+    padding: 20px;
+}
+
+.box {
+    
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.box img {
+    width: 50px;
+    height: auto;
+}
+
+.box strong {
+    font-size: 1.2rem;
+}
+.carddata{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+footer{
+   
+    font-family: arial;
+    
+    display: grid;
+    grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+footer span{
+    display: block;
+}
+
+
+
+@media screen and (orientation: portrait){
+    .bi-list{
+        display: flex;
+    }
+    .data{
+        display: none;
+    }
+    .box{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .carddata{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid */
+        justify-content: center; /* Ensures centering */
+        align-items: center;
+        display: flex; /* Flex to center items */
+        flex-wrap: wrap;
+       
+       
+    }
+    
+    .card1{
+        margin-left: 0px;
+    }
+    footer{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .footer1{
+        margin-left: 30px;
+    }
+    .footer3{
+        margin-left: 30px;
+    }
+    .footerl{
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+}
